@@ -1,7 +1,7 @@
 return {
   {
     "stevearc/conform.nvim",
-    -- event = 'BufWritePre', -- uncomment for format on save
+    event = 'BufWritePre', -- uncomment for format on save
     opts = require "configs.conform",
   },
 
@@ -26,7 +26,7 @@ return {
     "williamboman/mason-lspconfig.nvim",
     config = function()
       require("mason-lspconfig").setup {
-        ensure_installed = { "gopls", "lua_ls", "clangd" },
+        ensure_installed = { "gopls", "lua_ls", "clangd","deno","css-lsp","html-lsp","laravel-ls","tailwindcss-language-server","typescript-language-server"},
         automatic_installation = true,
       }
     end,
