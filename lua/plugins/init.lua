@@ -26,7 +26,7 @@ return {
     "williamboman/mason-lspconfig.nvim",
     config = function()
       require("mason-lspconfig").setup {
-        ensure_installed = { "gopls", "lua_ls", "clangd","deno","css-lsp","html-lsp","laravel-ls","tailwindcss-language-server","typescript-language-server"},
+        ensure_installed = { "gopls", "lua-language-server", "clangd","deno","css-lsp","html-lsp","laravel-ls","tailwindcss-language-server","typescript-language-server"},
         automatic_installation = true,
       }
     end,

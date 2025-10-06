@@ -3,6 +3,7 @@ local options = {
     lua = { "stylua" },
     css = { "prettier" },
     html = { "prettier" },
+    go = {"goimports","golines","golangci_lint"}
   },
 
   -- format_on_save = {
