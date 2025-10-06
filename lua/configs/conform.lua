@@ -3,14 +3,14 @@ local options = {
     lua = { "stylua" },
     css = { "prettier" },
     html = { "prettier" },
-    go = {"goimports","golines","golangci_lint"}
+    go = { "goimports" },
   },
 
-  -- format_on_save = {
+   format_on_save = {
   --   -- These options will be passed to conform.format()
-  --   timeout_ms = 500,
-  --   lsp_fallback = true,
-  -- },
+     timeout_ms = 500,
+     lsp_fallback = true,
+   },
 }
 
 return options
